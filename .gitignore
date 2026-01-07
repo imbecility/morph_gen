@@ -1,0 +1,6 @@
+.idea
+__pycache__
+.venv
+morph_gen.exe
+morph_gen_linux_x64_glibc
+morph_gen_musl_x64
