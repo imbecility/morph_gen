@@ -1,5 +1,17 @@
 # MorphGen: Russian Morphological Mapping Tool
 
+## Загрузка готовых бинарников
+
+Здесь представлены скомпилированные в C версии, не требующие установки Python. Все зависимости (включая словари) уже внутри.
+
+| Платформа | Особенности | Скачать |
+| :--- | :--- | :--- |
+| **Windows x64** | один `.exe` файл | [Скачать](https://github.com/imbecility/morph_gen/releases/download/v0.0.1/morph_gen.exe) |
+| **Linux x64 (glibc)** | Ubuntu 18.04+, Debian, CentOS, и т.п. | [Скачать](https://github.com/imbecility/morph_gen/releases/download/v0.0.1/morph_gen_linux_x64_glibc) |
+| **Linux x64 (musl)** | для Alpine и Docker-контейнеров | [Скачать](https://github.com/imbecility/morph_gen/releases/download/v0.0.1/morph_gen_linux_x64_musl) |
+
+---
+
 **MorphGen** — это инструмент для автоматической генерации всех грамматических форм слов на основе заданных пар «исходное слово → целевое слово». 
 
 Если вам нужно заменить в тексте «рыцарь» на «паладин» так, чтобы во всех падежах и числах («рыцарю» -> «паладину», «рыцарей» -> «паладинов») замена произошла корректно — этот инструмент автоматизирует процесс создания словаря замен.
@@ -65,16 +77,3 @@
 ```bash
 ./build_in_docker.sh
 ```
-
----
-
-## Загрузка готовых бинарников
-
-Здесь представлены скомпилированные в C версии, не требующие установки Python. Все зависимости (включая словари) уже внутри.
-
-| Платформа | Особенности | Скачать |
-| :--- | :--- | :--- |
-| **Windows x64** | один `.exe` файл | [Скачать](https://github.com/imbecility/morph_gen/releases/download/v0.0.1/morph_gen.exe) |
-| **Linux x64 (glibc)** | Ubuntu 18.04+, Debian, CentOS, и т.п. | [Скачать](https://github.com/imbecility/morph_gen/releases/download/v0.0.1/morph_gen_linux_x64_glibc) |
-| **Linux x64 (musl)** | для Alpine и Docker-контейнеров | [Скачать](https://github.com/imbecility/morph_gen/releases/download/v0.0.1/morph_gen_linux_x64_musl) |
-
